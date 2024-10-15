@@ -1,0 +1,63 @@
+@import url(./reset.css);
+@import url('./styles/header.css');
+@import url('./styles/apresentacao.css');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('./styles/sobre.css');
+@import url('./styles/skills.css');
+@import url('./styles/projetos.css');
+
+:root {
+    --tamanho-fonte: 1.2rem;
+    --fonte-padrao: "Kdam Thmor Pro", sans-serif;
+    --cor-apresentacao: linear-gradient(100deg, #222831, #76ABAE);
+    --cor-padrao: #000000;
+    --fonte-tablet-banner: 2rem;
+    --fonte-tablet-banner2: 1.2rem;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: var(--fonte-padrao);
+    font-style: normal;
+    max-width: 350px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+.rectangle {
+    width: 100%;
+    text-align: center;
+}
+
+.rectangle img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.apresentacao_animation, .apresentacao_skills, .apresentacao__sobre{
+    visibility: hidden;
+}
+
+.rectangle__footer {
+    margin-top: 30px;
+}
+
+.footer__blank {
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    html{
+        max-width: 720px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    html{
+        max-width: 1140px;
+        margin: auto;
+    }
+}

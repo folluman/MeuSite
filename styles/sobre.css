@@ -1,0 +1,139 @@
+.sobre {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 570px;
+}
+
+.sobre__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    height: 70%;
+    padding-top: 15%;
+}
+
+.sobre__titulo {
+    font-size: 0.8rem;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+
+.sobre__conteudo--foto {
+    width: 50px;
+    height: 190px;
+    background-size: 75%;
+    background-position: center;
+}
+
+.sobre__conteudo--foto {
+    width: 90%;
+}
+
+.sobre__conteudo--texto {
+    width: 95%;
+}
+
+.sobre__conteudo--texto p{
+    font-size: 0.6rem;
+    text-align: justify;
+}
+
+.sobre__conteudo--foto img {
+    float: right;
+    margin-right: 15px;
+    width: 115px;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.sobre__skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.sobre__skills--names {
+    list-style-type: square;
+    font-size: 0.8rem;
+}
+
+.sobre_hidden {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .sobre__conteudo--foto {
+        width: 70%;
+        height: 70%;
+        margin-left: 30px;
+        
+    }
+
+    .sobre__conteudo--foto img {
+        
+        float: right;
+        margin-right: 15px;
+        width: 220px;
+        border-radius: 10px;
+        height: 300px;
+    }
+
+    .sobre__titulo {
+        font-size: 1.2rem;
+        margin-left: 60px;
+        margin-top: 100px;
+    }
+
+    .sobre__conteudo--texto p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .sobre__skills--names {
+        list-style-type: square;
+        font-size: 1.2rem;
+    }
+
+    .sobre__skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sobre {
+        height: 80%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sobre__conteudo {
+        padding-top: 8%;
+    }
+    
+    .sobre__conteudo--foto {
+        height: 400px;
+        
+    }
+
+    .sobre__conteudo--foto img {
+        float: none;
+        margin-right: 0px;
+        width: 220px;
+        height: 300px;
+        border-radius: 10px;
+        margin-left: 30%;
+    }
+
+    .sobre__skills {
+        visibility: hidden;
+    }
+
+    .sobre_hidden {
+        visibility: initial;
+        margin-top: 10%;
+    }
+
+    .sobre__titulo h2 {
+        width: 30%;
+        text-align: center;
+    }
+}

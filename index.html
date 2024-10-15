@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header do projeto -->
+    <header>
+        <main class="main_header">
+            <div class="main_header__div--name">
+                <div class="img_name"></div>
+            </div>
+
+            <!-- Link Mobile -->
+            <div class="menu_hamburguer">
+                <img src="./images/menu.svg" alt="menu hamburguer" class="menu_hamburguer--img">
+            </div>
+                <div class="menu_hamburguer__links hidden">
+                    <li><a href="#scroll_sobre">sobre</a></li>
+                    <li><a href="#skill_scroll">skills</a></li>
+                    <li><a href="#scroll_projetos">projetos</a></li>
+            </div>
+            <!-- Links Desktop -->
+            <div class="links__desktop">
+                <li><a href="#scroll_sobre">sobre</a></li>
+                <li><a href="#skill_scroll">skills</a></li>
+                <li><a href="#scroll_projetos">projetos</a></li>
+            </div>
+        </main>
+    </header>
+
+    <!-- Página principal -->
+    <section class="home">
+        <div class="apresentacao apresentacao_animation">
+            <h1 class="apresentacao_titulo ">Olá! Bem-Vindo ao meu portfólio</h1>
+            <p class="apresentacao_paragrafo" >Espero que goste!</p>
+            <div class="button_links">
+                <a href="https://github.com/folluman?tab=repositories" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+        <div class="home__imagems">
+                <div class="home__imagem"><img src="./images/engine.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- Linha -->
+     <div class="rectangle" id="scroll_sobre"><img src="./images/Rectangle 4.svg" alt=""></div>
+
+     <!-- Sobre -->
+    <section class="sobre apresentacao__sobre">
+        <div class="sobre__titulo"><h2>Sobre</h2></div>
+        <div class="sobre__conteudo">
+            <div class="sobre__conteudo--foto"><img src="./images/foto.jpeg" alt=""></div>
+            <div class="sobre__conteudo--texto"><p>Sou Kaue, um profissional da área de Tecnologia da Informação, com experiência em gerenciamento de projetos digitais (na área de Digital Office) e análise de dados. Tenho habilidades em Power BI, além de conhecimento em Python, HTML, CSS e JavaScript, o que me permite contribuir em projetos de desenvolvimento web e automação. Busco oportunidades para aplicar minhas competências e colaborar em iniciativas inovadoras.</p>
+                <div class="sobre__skills sobre_hidden">
+                    <li class="sobre__skills--names">html</li>
+                    <li class="sobre__skills--names">css</li>
+                    <li class="sobre__skills--names">javascript</li>
+                    <li class="sobre__skills--names">power bi</li>
+                    <li class="sobre__skills--names">python</li>
+                    <li class="sobre__skills--names">figma</li>
+                </div>
+            </div>
+        </div>
+        <div class="sobre__skills">
+            <li class="sobre__skills--names">html</li>
+            <li class="sobre__skills--names">css</li>
+            <li class="sobre__skills--names">javascript</li>
+            <li class="sobre__skills--names">power bi</li>
+            <li class="sobre__skills--names">python</li>
+            <li class="sobre__skills--names">figma</li>
+        </div>
+    </section>
+
+    <!-- Linha -->
+    <div class="rectangle" id="skill_scroll"><img src="./images/Rectangle 4.svg" alt=""></div>
+
+    <!-- skills -->
+     <section class="skills apresentacao_skills">
+        <h2 class="skills__titulo">Skills</h2>
+        <div class="skills__container">
+        <div class="skills"><h3>comunicação</h3><img src="./images/Rectangle 14.svg" alt=""><p>Possuo uma forte habilidade de comunicação, o que me permite transmitir informações de forma clara e eficaz. Essa capacidade facilita a colaboração com colegas e a interação em equipe, garantindo que todos estejam alinhados em relação aos objetivos do projeto.</p></div>
+        <div class="skills"><h3>trabalho em equipe</h3><img src="./images/Rectangle 14.svg" alt=""><p>Tenho uma sólida experiência em trabalho em equipe, onde valorizo a diversidade de ideias e perspectivas. Colaborar com colegas de diferentes áreas enriquece os projetos e contribui para alcançar resultados positivos em grupo.</p></div>
+        <div class="skills"><h3>adaptabilidade</h3><img src="./images/Rectangle 14.svg" alt=""><p>Sou altamente adaptável a mudanças e novos desafios. Essa flexibilidade me permite enfrentar situações dinâmicas com confiança, buscando soluções criativas e ajustando-me rapidamente a novas circunstâncias.</p></div>
+        </div>
+     </section>
+
+     <!-- Linha -->
+     <div class="rectangle" id="scroll_projetos"><img src="./images/Rectangle 4.svg" alt=""></div>
+    
+    <!-- Projetos -->
+    <section class="projetos">
+        <div class="projetos__titulo"><h2>Projetos</h2></div>
+        <div class="projetos_imagem projeto__coletaCerta"><img src="./images/coletaCerta.svg" alt="Jogo Coleta Certa"><div class="projetos_Titulo"><h3>Coleta Certa: Aprendendo a Separar o Lixo Brincando!</h3><p class="projetos_Texto">Desenvolvi a gamificação "Coleta Certa", uma iniciativa voltada para a educação ambiental, com o objetivo de ensinar crianças sobre a correta separação do lixo e a importância da reciclagem. 
+        </p><a href="https://www.construct.net/en/free-online-games/coleta-52502/play" class="projeto_link" target="_blank">Link</a></div></div>
+        <div class="projetos_imagem designApp"><img src="./images/designApp2.svg" alt=""><div class="projetos_Titulo"><h3>Design do aplicativo para reserva de veículos da frota</h3><p>Durante o meu período na empresa Volkswagen Caminhões e Ônibus, desenvolvi uma ideia de aplicativo voltado para a reserva de veículos da frota, o qual o formulário era feito em papel, em que o objetivo era ajudar os funcionários da empresa a reservar carros ou caronas para se deslocarem do escritório para à fábrica e vice-versa. Desenvolvi o fluxograma de jornadas e o design do aplicativo de acordo com as regras de Marketing da empresa.</p><a href="https://www.figma.com/design/27BM2HcZOYr7divzeDEwg0/aplicativo-p%2F-gerenciamento-de-frota?node-id=6-2&node-type=canvas&t=9yEFJ1M7N4pbqImO-0" class="projeto_link" target="_blank">Link</a></div></div>
+        <div class="projetos_imagem clinicaImg"><img src="./images/banner 1.svg" alt=""><div class="projetos_Titulo"><h3>Site da Clinica Gabriela Madazio</h3><p>Primeiro site que desenvolvi para um cliente, no caso o site apresenta um banco de dados local que foi aproveitado para concluir um projeto da faculdade.</p><a href="https://github.com/folluman/Site-Clinica" class="projeto_link" target="_blank">Link</a><a href="https://www.youtube.com/watch?v=9_shU8HcECg" class="projeto_link link_github" target="_blank">Link do Vídeo</a></div></div>
+        
+        <!-- Linha -->
+        <div class="rectangle rectangle__footer"><img src="./images/Rectangle 4.svg" alt=""></div>
+
+        <div class="footer__blank"></div>
+    </section>
+</body>
+</html>
