@@ -6,6 +6,16 @@
 @import url('./styles/skills.css');
 @import url('./styles/projetos.css');
 
+@keyframes ballsMove {
+    from {
+        margin-bottom: 0px;
+    }
+
+    to {
+        margin-bottom: 50px;
+    }
+}
+
 :root {
     --tamanho-fonte: 1.2rem;
     --fonte-padrao: "Kdam Thmor Pro", sans-serif;
@@ -23,6 +33,10 @@ html {
     max-width: 350px;
     margin: auto;
     scroll-behavior: smooth;
+}
+
+.site {
+    height: 100%;
 }
 
 .rectangle {
@@ -48,10 +62,53 @@ html {
     height: 40px;
 }
 
+.hidden__site {
+    display: none;
+}
+
+.balls {
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: ballsMove 0.44s linear infinite alternate;
+}
+
+.balls:nth-child(2) {
+    animation-duration: 0.46s;
+}
+
+.balls:nth-child(3) {
+    animation-duration: 0.48s;
+}
+
+
+.container__balls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.loggingIn {
+    height: 100%;
+}
+
+.hidden__loggingIn {
+    display: none;
+}
+
 @media (min-width: 768px) {
     html{
         max-width: 720px;
         margin: auto;
+    }
+
+    .balls {
+        background-color: #000000;
+        width: 30px;
+        height: 30px; 
     }
 }
 
@@ -59,5 +116,11 @@ html {
     html{
         max-width: 1140px;
         margin: auto;
+    }
+
+    .balls {
+        background-color: #000000;
+        width: 40px;
+        height: 40px; 
     }
 }
