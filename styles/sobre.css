@@ -41,7 +41,7 @@
 .sobre__conteudo--foto img {
     float: right;
     margin-right: 15px;
-    width: 115px;
+    width: 150px;
     border-radius: 10px;
     height: 180px;
 }
@@ -70,10 +70,9 @@
     }
 
     .sobre__conteudo--foto img {
-        
         float: right;
         margin-right: 15px;
-        width: 220px;
+        width: 270px;
         border-radius: 10px;
         height: 300px;
     }
@@ -117,7 +116,7 @@
     .sobre__conteudo--foto img {
         float: none;
         margin-right: 0px;
-        width: 220px;
+        width: 270px;
         height: 300px;
         border-radius: 10px;
         margin-left: 30%;
